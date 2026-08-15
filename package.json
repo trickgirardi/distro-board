@@ -2,23 +2,19 @@
   "name": "distro-board",
   "version": "0.0.1",
   "description": "Distribution board for Linux distributions",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "turbo lint",
-    "typecheck": "turbo typecheck"
+    "typecheck": "turbo typecheck",
+    "dev:web": "pnpm --filter @distro-board/web dev",
+    "dev:api": "pnpm --filter @distro-board/api dev"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.20.0",
-      "onFail": "download"
-    }
-  },
+  "license": "MIT",
+  "packageManager": "pnpm@11.20.0",
   "type": "module",
   "devDependencies": {
     "turbo": "^2.10.9",
