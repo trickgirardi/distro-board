@@ -1,5 +1,6 @@
 import { Hono } from "hono";
-import { neon } from "@neondatabase/serverless";
+import { sql } from "drizzle-orm";
+import { createDb } from "./db/client";
 
 type Bindings = {
   DATABASE_URL: string;
@@ -22,11 +23,11 @@ app.get("/health", (c) => {
 
 app.get("/health/database", async (c) => {
   try {
-    const sql = neon(c.env.DATABASE_URL);
-    const [{ ok }] = await sql`SELECT 1 AS ok`;
+    const db = createDb(c.env.DATABASE_URL);
+    await db.execute(sql`SELECT 1`);
 
     return c.json({
-      status: ok === 1 ? "healthy" : "unhealthy",
+      status: "healthy",
       database: "connected",
     });
   } catch {
