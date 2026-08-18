@@ -1,12 +1,10 @@
 import { Hono } from "hono";
 import { sql } from "drizzle-orm";
 import { createDb } from "./db/client";
+import { distrosRoutes } from "./modules/distros/distros.routes";
+import type { AppEnv } from "./types";
 
-type Bindings = {
-  DATABASE_URL: string;
-};
-
-const app = new Hono<{ Bindings: Bindings }>();
+const app = new Hono<AppEnv>();
 
 app.get("/", (c) => {
   return c.json({
@@ -40,5 +38,7 @@ app.get("/health/database", async (c) => {
     );
   }
 });
+
+app.route("/distros", distrosRoutes);
 
 export default app;
