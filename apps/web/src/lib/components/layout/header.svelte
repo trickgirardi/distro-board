@@ -1,34 +1,15 @@
 <script>
+	import { resolve } from '$app/paths';
 	import Button from '../ui/button/button.svelte';
-	import {
-		NavigationMenuItem,
-		NavigationMenuLink,
-		NavigationMenuList,
-		NavigationMenuRoot
-	} from '../ui/navigation-menu';
 
-	const navItems = [
-		{ name: 'Home', href: '/' },
-		{ name: 'Distros', href: '/distros' }
-	];
+	const homePath = resolve('/');
 </script>
 
-<header class="flex items-center justify-between p-4">
-	<div>
-		<h1 class="text-2xl font-bold">Distro Board</h1>
-	</div>
-	<div>
-		<NavigationMenuRoot>
-			<NavigationMenuList>
-				{#each navItems as item (item.href)}
-					<NavigationMenuItem>
-						<NavigationMenuLink href={item.href}>{item.name}</NavigationMenuLink>
-					</NavigationMenuItem>
-				{/each}
-			</NavigationMenuList>
-		</NavigationMenuRoot>
-	</div>
-	<div>
-		<Button variant="default" href="/login">Login</Button>
+<header class="border-b border-border bg-background">
+	<div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+		<a class="text-lg font-semibold tracking-tight" href={homePath}>Distro Board</a>
+		<nav aria-label="Navegação principal">
+			<Button variant="ghost" size="sm" href={homePath}>Distros</Button>
+		</nav>
 	</div>
 </header>
