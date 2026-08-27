@@ -6,12 +6,23 @@ import { deleteDistro } from "./mutations/delete-distro";
 import { updateDistro } from "./mutations/update-distro";
 import { isDistroInput, isDistroUpdate } from "./distros.schemas";
 import { getDistro } from "./queries/get-distro";
-import { listDistros } from "./queries/list-distros";
+import { listDistros, parseListDistrosFilters } from "./queries/list-distros";
 
 export const distrosRoutes = new Hono<AppEnv>();
 
 distrosRoutes.get("/", async (c) => {
-  return c.json(await listDistros(createDb(c.env.DATABASE_URL)));
+  const filters = parseListDistrosFilters({
+    search: c.req.query("search"),
+    base: c.req.query("base"),
+    releaseModel: c.req.query("releaseModel"),
+    desktopEnvironment: c.req.query("desktopEnvironment"),
+    packageManager: c.req.query("packageManager"),
+    architecture: c.req.query("architecture"),
+    targetAudience: c.req.query("targetAudience"),
+    tag: c.req.query("tag"),
+  });
+
+  return c.json(await listDistros(createDb(c.env.DATABASE_URL), filters));
 });
 
 distrosRoutes.get("/:slug", async (c) => {
