@@ -1,0 +1,1 @@
+ALTER TABLE "distros" DROP COLUMN "download_url";

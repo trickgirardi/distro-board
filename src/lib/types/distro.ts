@@ -15,7 +15,6 @@ export type DistroDetail = DistroPreview & {
 	description: string;
 	documentationUrl: string | null;
 	sourceCodeUrl: string | null;
-	downloadUrl: string | null;
 	supportedDesktopEnvironments: string[];
 	initSystem: string;
 	architectures: string[];

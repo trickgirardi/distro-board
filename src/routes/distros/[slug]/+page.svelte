@@ -46,11 +46,6 @@
 				<Button href={data.distro.homepageUrl} target="_blank" rel="noreferrer">
 					Site oficial
 				</Button>
-				{#if data.distro.downloadUrl}
-					<Button href={data.distro.downloadUrl} target="_blank" rel="noreferrer" variant="outline">
-						Download
-					</Button>
-				{/if}
 			</div>
 		</div>
 	</header>
@@ -152,18 +147,6 @@
 					Site oficial
 				</a>
 			</li>
-			{#if data.distro.downloadUrl}
-				<li>
-					<a
-						class="text-primary hover:underline"
-						href={data.distro.downloadUrl}
-						target="_blank"
-						rel="noreferrer"
-					>
-						Download
-					</a>
-				</li>
-			{/if}
 			{#if data.distro.documentationUrl}
 				<li>
 					<a
