@@ -133,44 +133,4 @@
 			</div>
 		</section>
 	{/if}
-
-	<section class="mt-10 border-t border-border pt-8" aria-labelledby="links-title">
-		<h2 id="links-title" class="text-lg font-semibold">Links</h2>
-		<ul class="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-sm">
-			<li>
-				<a
-					class="text-primary hover:underline"
-					href={data.distro.homepageUrl}
-					target="_blank"
-					rel="noreferrer"
-				>
-					Site oficial
-				</a>
-			</li>
-			{#if data.distro.documentationUrl}
-				<li>
-					<a
-						class="text-primary hover:underline"
-						href={data.distro.documentationUrl}
-						target="_blank"
-						rel="noreferrer"
-					>
-						Documentação
-					</a>
-				</li>
-			{/if}
-			{#if data.distro.sourceCodeUrl}
-				<li>
-					<a
-						class="text-primary hover:underline"
-						href={data.distro.sourceCodeUrl}
-						target="_blank"
-						rel="noreferrer"
-					>
-						Repositório
-					</a>
-				</li>
-			{/if}
-		</ul>
-	</section>
 </main>

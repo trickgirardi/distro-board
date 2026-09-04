@@ -13,8 +13,6 @@ export type DistroPreview = {
 
 export type DistroDetail = DistroPreview & {
 	description: string;
-	documentationUrl: string | null;
-	sourceCodeUrl: string | null;
 	supportedDesktopEnvironments: string[];
 	initSystem: string;
 	architectures: string[];

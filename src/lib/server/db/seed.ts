@@ -30,8 +30,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'A community-developed distribution known for its stability, broad architecture support, and commitment to free software.',
 		homepageUrl: 'https://www.debian.org/',
-		documentationUrl: 'https://www.debian.org/doc/',
-		sourceCodeUrl: 'https://salsa.debian.org/',
 		releaseModel: 'fixed',
 		baseFamily: 'debian',
 		packageManagers: ['apt'],
@@ -49,8 +47,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'A Debian-based distribution from Canonical focused on accessible releases and a broad ecosystem of desktop and server software.',
 		homepageUrl: 'https://ubuntu.com/',
-		documentationUrl: 'https://help.ubuntu.com/',
-		sourceCodeUrl: 'https://github.com/canonical',
 		releaseModel: 'fixed',
 		baseFamily: 'ubuntu',
 		packageManagers: ['apt', 'snap'],
@@ -76,8 +72,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'An Ubuntu-based desktop distribution that emphasizes ease of use and ships polished Cinnamon, MATE, and Xfce editions.',
 		homepageUrl: 'https://linuxmint.com/',
-		documentationUrl: 'https://linuxmint-user-guide.readthedocs.io/en/latest/',
-		sourceCodeUrl: 'https://github.com/linuxmint',
 		releaseModel: 'fixed',
 		baseFamily: 'ubuntu',
 		packageManagers: ['apt', 'flatpak'],
@@ -95,8 +89,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'A community-driven distribution sponsored by Red Hat that delivers current open-source technology in editions, spins, and atomic desktops.',
 		homepageUrl: 'https://fedoraproject.org/',
-		documentationUrl: 'https://docs.fedoraproject.org/',
-		sourceCodeUrl: 'https://github.com/fedora-linux',
 		releaseModel: 'fixed',
 		baseFamily: 'fedora',
 		packageManagers: ['dnf', 'flatpak'],
@@ -123,8 +115,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'An independently developed rolling-release distribution built around user choice, pacman, and the Arch Wiki.',
 		homepageUrl: 'https://archlinux.org/',
-		documentationUrl: 'https://wiki.archlinux.org/',
-		sourceCodeUrl: 'https://gitlab.archlinux.org/archlinux',
 		releaseModel: 'rolling',
 		baseFamily: 'arch',
 		packageManagers: ['pacman'],
@@ -151,8 +141,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'A rolling openSUSE distribution that continuously delivers updated packages after automated testing and openQA validation.',
 		homepageUrl: 'https://get.opensuse.org/tumbleweed/',
-		documentationUrl: 'https://doc.opensuse.org/',
-		sourceCodeUrl: 'https://github.com/openSUSE',
 		releaseModel: 'rolling',
 		baseFamily: 'opensuse',
 		packageManagers: ['zypper', 'flatpak'],
@@ -170,8 +158,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'A fixed-release openSUSE distribution with a focus on predictable desktop and server deployments.',
 		homepageUrl: 'https://get.opensuse.org/leap/',
-		documentationUrl: 'https://doc.opensuse.org/',
-		sourceCodeUrl: 'https://github.com/openSUSE',
 		releaseModel: 'fixed',
 		baseFamily: 'opensuse',
 		packageManagers: ['zypper', 'flatpak'],
@@ -189,8 +175,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'An Arch-based distribution that offers curated rolling packages and official desktop editions for a more approachable experience.',
 		homepageUrl: 'https://manjaro.org/',
-		documentationUrl: 'https://wiki.manjaro.org/',
-		sourceCodeUrl: 'https://gitlab.manjaro.org/',
 		releaseModel: 'rolling',
 		baseFamily: 'arch',
 		packageManagers: ['pacman', 'flatpak'],
@@ -208,8 +192,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'An Arch-based rolling distribution that provides a friendly installer while staying close to the Arch ecosystem.',
 		homepageUrl: 'https://endeavouros.com/',
-		documentationUrl: 'https://discovery.endeavouros.com/',
-		sourceCodeUrl: 'https://github.com/endeavouros-team',
 		releaseModel: 'rolling',
 		baseFamily: 'arch',
 		packageManagers: ['pacman', 'flatpak'],
@@ -235,8 +217,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'An Ubuntu-based distribution with the COSMIC desktop, developer-oriented defaults, and dedicated installation images for NVIDIA hardware.',
 		homepageUrl: 'https://system76.com/pop/',
-		documentationUrl: 'https://pop-os.github.io/docs/',
-		sourceCodeUrl: 'https://github.com/pop-os',
 		releaseModel: 'fixed',
 		baseFamily: 'ubuntu',
 		packageManagers: ['apt', 'flatpak'],
@@ -254,8 +234,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'An Ubuntu-based distribution designed to ease the transition from other desktop operating systems with familiar layouts and simple defaults.',
 		homepageUrl: 'https://zorin.com/os/',
-		documentationUrl: 'https://help.zorin.com/',
-		sourceCodeUrl: 'https://github.com/ZorinOS',
 		releaseModel: 'fixed',
 		baseFamily: 'ubuntu',
 		packageManagers: ['apt', 'flatpak'],
@@ -273,8 +251,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'An Ubuntu-based distribution built around the Pantheon desktop and a cohesive set of curated applications.',
 		homepageUrl: 'https://elementary.io/',
-		documentationUrl: 'https://docs.elementary.io/',
-		sourceCodeUrl: 'https://github.com/elementary',
 		releaseModel: 'fixed',
 		baseFamily: 'ubuntu',
 		packageManagers: ['apt', 'flatpak'],
@@ -292,8 +268,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'An independently developed distribution that uses the Nix package manager and declarative configuration for reproducible systems.',
 		homepageUrl: 'https://nixos.org/',
-		documentationUrl: 'https://nixos.org/learn/',
-		sourceCodeUrl: 'https://github.com/NixOS/nixpkgs',
 		releaseModel: 'fixed',
 		baseFamily: 'independent',
 		packageManagers: ['nix'],
@@ -329,8 +303,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'A flexible source-based distribution whose Portage system gives users detailed control over packages and build options.',
 		homepageUrl: 'https://www.gentoo.org/',
-		documentationUrl: 'https://wiki.gentoo.org/',
-		sourceCodeUrl: 'https://gitlab.gentoo.org/',
 		releaseModel: 'rolling',
 		baseFamily: 'gentoo',
 		packageManagers: ['portage'],
@@ -357,8 +329,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'An independent distribution built around musl, BusyBox, OpenRC, and the apk package manager for lightweight systems and containers.',
 		homepageUrl: 'https://www.alpinelinux.org/',
-		documentationUrl: 'https://wiki.alpinelinux.org/',
-		sourceCodeUrl: 'https://gitlab.alpinelinux.org/alpine',
 		releaseModel: 'fixed',
 		baseFamily: 'independent',
 		packageManagers: ['apk'],
@@ -376,8 +346,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'A general-purpose rolling-release distribution that uses the xbps package manager and the runit init system.',
 		homepageUrl: 'https://voidlinux.org/',
-		documentationUrl: 'https://docs.voidlinux.org/',
-		sourceCodeUrl: 'https://github.com/void-linux',
 		releaseModel: 'rolling',
 		baseFamily: 'independent',
 		packageManagers: ['xbps'],
@@ -403,8 +371,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'An independent distribution that favors simplicity, traditional Unix practices, and a conservative approach to system design.',
 		homepageUrl: 'https://www.slackware.com/',
-		documentationUrl: 'https://docs.slackware.com/',
-		sourceCodeUrl: 'https://git.slackware.nl/',
 		releaseModel: 'fixed',
 		baseFamily: 'slackware',
 		packageManagers: ['other'],
@@ -422,8 +388,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'A Fedora Atomic-based distribution tailored for gaming desktops, handhelds, and home-theater PCs with integrated Flatpak support.',
 		homepageUrl: 'https://bazzite.gg/',
-		documentationUrl: 'https://docs.bazzite.gg/',
-		sourceCodeUrl: 'https://github.com/ublue-os/bazzite',
 		releaseModel: 'immutable',
 		baseFamily: 'fedora',
 		packageManagers: ['rpm-ostree', 'flatpak'],
@@ -441,8 +405,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'A rolling distribution maintained by Offensive Security for penetration testing, security research, and digital forensics.',
 		homepageUrl: 'https://www.kali.org/',
-		documentationUrl: 'https://www.kali.org/docs/',
-		sourceCodeUrl: 'https://gitlab.com/kalilinux',
 		releaseModel: 'rolling',
 		baseFamily: 'debian',
 		packageManagers: ['apt'],
@@ -460,8 +422,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'A Debian-based live operating system designed to preserve privacy and anonymity by routing network traffic through Tor.',
 		homepageUrl: 'https://tails.net/',
-		documentationUrl: 'https://tails.net/doc/',
-		sourceCodeUrl: 'https://gitlab.tails.boum.org/tails/tails',
 		releaseModel: 'fixed',
 		baseFamily: 'debian',
 		packageManagers: ['apt'],
@@ -479,8 +439,6 @@ const distroSeed: readonly SeedDistro[] = [
 		description:
 			'An Arch-based distribution that focuses on kernel and package optimizations for responsive desktops, gaming, and power users.',
 		homepageUrl: 'https://cachyos.org/',
-		documentationUrl: 'https://wiki.cachyos.org/',
-		sourceCodeUrl: 'https://github.com/CachyOS',
 		releaseModel: 'rolling',
 		baseFamily: 'arch',
 		packageManagers: ['pacman', 'flatpak'],

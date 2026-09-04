@@ -110,8 +110,6 @@ export const distros = pgTable('distros', {
 	description: text().notNull(),
 	logoUrl: text('logo_url'),
 	homepageUrl: text('homepage_url').notNull(),
-	documentationUrl: text('documentation_url'),
-	sourceCodeUrl: text('source_code_url'),
 	releaseModel: releaseModelEnum('release_model').notNull(),
 	baseFamily: baseFamilyEnum('base_family').notNull(),
 	packageManagers: packageManagerEnum('package_managers').array().notNull(),
